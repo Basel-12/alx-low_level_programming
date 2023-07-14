@@ -12,19 +12,23 @@
  */
 int main(void)
 {
-    int i=0,j;
+    int i=0, j, k;
     while (i<=8)
     {
         for (j = i+1; j <=9; j++)
         {
-            putchar('0' + i);
-            putchar('0' + j);
+            for (k = j+1; k <= 9; k++)
+            {
+                putchar('0' + i);
+                putchar('0' + j);
+                putchar('0' + k);
             if (i == 8 && j == 9)
             {
                 break;
             }
             putchar(',');
             putchar(' ');
+            }
         }
         i++;
     }
