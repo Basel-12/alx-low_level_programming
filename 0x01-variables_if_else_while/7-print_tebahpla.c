@@ -15,7 +15,7 @@ int main(void)
 	int i;
 
 
-	for (i = 26; i >= 0; i--)
+	for (i = 26; i >= 1; i--)
 {
 	putchar(96 + i);
 	if (i == 1)
