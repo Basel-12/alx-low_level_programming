@@ -12,7 +12,10 @@
  */
 int main(void)
 {
-	for (int i = 1; i <= 26; i++)
+	int i;
+
+
+	for (i = 1; i <= 26; i++)
 {
 	putchar(96 + i);
 	if (i == 26)
