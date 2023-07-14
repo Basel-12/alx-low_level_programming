@@ -12,16 +12,15 @@
  */
 int main(void)
 {
-    int i;
-
+	int i;
 
 	for (i = 1; i <= 26; i++)
-        putchar(96+i);
-    for ( i = 1; i <= 26; i++)
-    {
-        putchar(64 + i);
-        if (i == 26)
-            putchar('\n');
-    }
+		putchar(96 + i);
+	for (i = 1; i <= 26; i++)
+{
+		putchar(64 + i);
+	if (i == 26)
+		putchar('\n');
+}
 	return (0);
 }
