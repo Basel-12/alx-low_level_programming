@@ -12,16 +12,21 @@
  */
 int main(void)
 {
-    int i;
-    for (i = 0; i <=9; i++)
+    int i=0,j;
+    while (i<=8)
     {
-        putchar(48 + i);
-        if (i==9){
-            putchar('$');
-            break;
+        for (j = i+1; j <=9; j++)
+        {
+            putchar('0' + i);
+            putchar('0' + j);
+            if (i == 8 && j == 9)
+            {
+                break;
+            }
+            putchar(',');
+            putchar(' ');
         }
-        putchar(',');
-        putchar(' ');
+        i++;
     }
 	return (0);
 }
