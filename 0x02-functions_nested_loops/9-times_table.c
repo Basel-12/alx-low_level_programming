@@ -21,7 +21,8 @@ void times_table(void)
 {
 		res = hh * mm;
 		_putchar(res / 10 + '0');
-		_putchar(res % 10 + '0');
+		if (res > 9)
+			_putchar(res % 10 + '0');
 		_putchar(',');
 		if (mm != 9)
 			_putchar(' ');
