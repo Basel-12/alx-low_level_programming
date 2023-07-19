@@ -7,12 +7,12 @@ i
 
 
 /**
- * jack_bauer - function to get last digit of a number
+ * times_table - function to get last digit of a number
  *
  * Return: returns 1 if 'c' is alphabet otherwise returns 0
  *
 */
-void jack_bauer(void)
+void times_table(void)
 {
 	int hh, mm, res;
 
