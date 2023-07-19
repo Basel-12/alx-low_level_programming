@@ -8,7 +8,7 @@
 /**
  * main - Entry point
  *
- * Description: A C progrmam uses puts function
+ * Description: A C progrmam uses print_alphabet function
  *
  * Return: Always 0 (Success)
  */
