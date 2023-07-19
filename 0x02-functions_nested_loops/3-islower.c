@@ -6,13 +6,16 @@
 
 
 /**
- * islower - return (1) if the letter lower case othrewise returns (0)
+ * _islower - function to check if character lowercase
+ *
+ * @c: checks input of function
+ *
+ * Return: returns 1 if 'c' is lowercase otherwise returns 0
  *
 */
 int _islower(int c)
 {
 	if (c >= 97 && c <= 122)
 		return (1);
-	else
-		return (0);
+	return (0);
 }
