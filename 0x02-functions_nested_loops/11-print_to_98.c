@@ -29,4 +29,6 @@ else
 	printf("%d, ", i);
 }
 	printf("98\n");
+
+}
 }
