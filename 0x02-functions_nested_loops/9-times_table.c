@@ -20,7 +20,8 @@ void times_table(void)
 	for (mm = 0; mm <= 9; mm++)
 {
 		res = hh * mm;
-		_putchar(res);
+		_putchar(res / 10 + '0');
+		_putchar(res % 10 + '0');
 		_putchar(',');
 		if (mm != 9)
 			_putchar(' ');
