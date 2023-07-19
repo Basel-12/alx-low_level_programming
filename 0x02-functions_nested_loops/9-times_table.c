@@ -2,15 +2,10 @@
 #include <time.h>
 #include<stdio.h>
 #include<unistd.h>
-#include "main.h"
-
 
 /**
- * times_table - function to get last digit of a number
- *
- * Return: returns 1 if 'c' is alphabet otherwise returns 0
- *
-*/
+ * times_table - print the time table
+ */
 void times_table(void)
 {
 	int hh, mm, res;
@@ -20,20 +15,20 @@ void times_table(void)
 	for (mm = 1; mm <= 9; mm++)
 {
 		res = hh * mm;
-		if (mm != 9)
-{
-		_putchar(',');
-		_putchar(' ');
-}
 		if (res <= 9)
-		{
+{
 			putchar(' ');
-		}
-		_putchar(res / 10 + '0');
-		if (res > 9)
-			_putchar(res % 10 + '0');
+}
+		putchar(res / 10 + '0');
+	if (res > 9)
+		putchar(res % 10 + '0');
+	if (mm != 9)
+{
+		putchar(',');
+		putchar(' ');
+}
 }
 	if (hh != 9)
-		_putchar('\n');
+		putchar('\n');
 }
 }
