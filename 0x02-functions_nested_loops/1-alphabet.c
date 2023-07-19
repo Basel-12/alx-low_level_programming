@@ -6,12 +6,9 @@
 
 
 /**
- * main - Entry point
+ * print_alphabet - uses _putchar to print alphabet
  *
- * Description: A C progrmam uses print_alphabet function
- *
- * Return: Always 0 (Success)
- */
+*/
 void print_alphabet(void)
 {
 	char i;
