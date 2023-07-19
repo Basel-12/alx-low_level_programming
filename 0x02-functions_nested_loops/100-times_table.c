@@ -12,7 +12,7 @@
  */
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, res;
 
 	if (n > 15 || n < 0)
 		return;
@@ -24,7 +24,7 @@ void print_times_table(int n)
 {
 		_putchar(',');
 		_putchar(' ');
-		res = hh * mm;
+		res = i * j;
 		if (res <= 9)
 {
 			_putchar(' ');
