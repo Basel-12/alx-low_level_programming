@@ -17,15 +17,21 @@ void times_table(void)
 
 	for (hh = 0; hh <= 9; hh++)
 {
-	for (mm = 0; mm <= 9; mm++)
+	for (mm = 1; mm <= 9; mm++)
 {
 		res = hh * mm;
+		if (mm != 9)
+{
+		_putchar(',');
+		_putchar(' ');
+}
+		if (res <= 9)
+		{
+			putchar(' ');
+		}
 		_putchar(res / 10 + '0');
 		if (res > 9)
 			_putchar(res % 10 + '0');
-		_putchar(',');
-		if (mm != 9)
-			_putchar(' ');
 }
 	if (hh != 9)
 		_putchar('\n');
