@@ -24,6 +24,10 @@ void print_diagonal(int n)
 			_putchar(' ');
 		}
 		_putchar(92);
-		_putchar('\n');
 	}
+	_putchar('\n');
+}
+int main(){
+	print_diagonal(0);
+	return 0;
 }
