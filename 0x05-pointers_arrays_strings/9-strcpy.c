@@ -6,11 +6,11 @@
 
 
 /**
- * _strcpy- function
+ * _strcpy - function
  *
  * @dest: pointer of an integer
  *
- * @src: pointer
+ * @src: input
  *
  * Return: returns 1 if 'c' is lowercase otherwise returns 0
  *
@@ -19,7 +19,9 @@ char *_strcpy(char *dest, char *src)
 {
 	int i;
 
-	for (i = 0; src[i] != '\0'; ++i)
+	do {
 		dest[i] = src[i];
+		i++;
+	} while (src[i] != '\0');
 	return (dest);
 }
