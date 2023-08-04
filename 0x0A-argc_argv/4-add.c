@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
 
 	while (argc--)
 	{
-		if (argv[i] < '0' && argv[i] > '9)
+		if (argv[i] < '0' || argv[i] > '9)
 		{
 			return(printf("Error\n"), 1);
 		}
