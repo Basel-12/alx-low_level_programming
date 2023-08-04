@@ -18,9 +18,12 @@ int main(int argc, char *argv[])
 {
 	if (argc == 3)
 	{
-		printf("%d\n", (argv[1] - '0') * (argv[2] - '0'));
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	}
 	else
+	{
 		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
