@@ -16,15 +16,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0;
+	int sum = 0, i = 0;
 
-	while (--argc)
+	while (argc--)
 	{
-		if (argv[argc] < '0' && argv[argc] > '9)
+		if (argv[i] < '0' && argv[i] > '9)
 		{
 			return(printf("Error\n"), 1);
 		}
-		sum += argv[argc];
+		sum += argv[i];
 	}
 	printf("%d\n", sum);
 	return (0);
