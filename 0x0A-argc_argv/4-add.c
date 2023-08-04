@@ -17,7 +17,7 @@
 int main(int argc, char *argv[])
 {
 	int sum = 0;
-	char *s;
+	char *c;
 
 	while (argc--)
 	{
