@@ -16,15 +16,15 @@
  */
 int main(int argc, char *argv[])
 {
-	int sum = 0, i = argc - 1;
+	int sum = 0;
+	char *s;
 
 	while (argc--)
 	{
-		if (argv[i] < '0' || argv[i] > '9)
-		{
-			return(printf("Error\n"), 1);
-		}
-		sum += atoi(argv[i]);
+		for (*c = argv[argc]; *c; c++)
+			if (argv[i] < '0' || argv[i] > '9)
+				return(printf("Error\n"), 1);
+		sum += atoi(argv[argc]);
 	}
 	printf("%d\n", sum);
 	return (0);
