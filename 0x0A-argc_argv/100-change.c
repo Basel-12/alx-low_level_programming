@@ -16,11 +16,11 @@
  */
 int main(int argc, char *argv[])
 {
-	int num = atoi(argv[1]), res = 0, i;
-	int valid[] = {25, 10, 5, 2, 1};
+	if (argc == 2)
+	{
+		int num = atoi(argv[1]), res = 0, i;
+		int valid[] = {25, 10, 5, 2, 1};
 
-	if (argc != 2)
-		return (printf("Error\n"), 1);
 		if (num < 0)
 			printf("0\n");
 		else
@@ -39,5 +39,11 @@ int main(int argc, char *argv[])
 			}
 			printf("%d\n", res);
 		}
+	}
+	else
+	{
+		printf("Error\n");
+		return (1);
+	}
 	return (0);
 }
