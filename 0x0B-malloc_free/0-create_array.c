@@ -21,12 +21,9 @@ char *create_array(unsigned int size, char c)
 
 	if (size == 0 || s == 0)
 		return (NULL);
-	 int i = 0;
-
-	while (i < size)
+	while (size--)
 	{
-		s[i] = c;
-		i++;
+		s[size] = c;
 	}
 	return (s);
 }
