@@ -1,0 +1,35 @@
+#include <stdlib.h>
+#include <time.h>
+#include<stdio.h>
+#include<unistd.h>
+#include "main.h"
+
+
+/**
+ * argstostr - function
+ *
+ * @ac: size of an array
+ *
+ * @av: input char
+ *
+ * Return: returns 1 if 'c' is lowercase otherwise returns 0
+ *
+*/
+char *argstostr(int ac, char **av)
+{
+	int i = 0, j = 0, len = 0;
+	char *s;
+
+	s = (char *)malloc(sizeof(char) * ac + ac);
+	if (s == 0 || ac == 0 || av == 0)
+		return (NULL);
+	for (i = 0; i < ac; i++)
+	{
+		for (j = 0; av[i][j] != '\0'; j++, len++)
+			s[len] = av[i][j];
+		s[len] = '\n';
+		len++;
+	}
+	s[len] = '\0';
+	return (s);
+}
