@@ -21,12 +21,11 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *m;
 
-	(void) size;
 	if (nmemb == 0 || size == 0)
 		return (NULL);
-	m = malloc(sizeof(int) * nmemb);
+	m = malloc(size * nmemb);
 	if (m == 0)
 		return (NULL);
-	memset(m, 0, sizeof(int) * nmemb);
+	memset(m, 0, size * nmemb);
 	return (m);
 }
