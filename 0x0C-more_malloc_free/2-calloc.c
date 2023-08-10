@@ -21,6 +21,7 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	void *m;
 
+	(void) size;
 	if (nmemb == 0 || size == 0)
 		return (NULL);
 	m = malloc(sizeof(int) * nmemb);
