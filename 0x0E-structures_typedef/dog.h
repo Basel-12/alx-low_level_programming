@@ -1,3 +1,6 @@
+#ifndef DOG_H
+#define DOG_H
+
 #include <stdlib.h>
 #include <time.h>
 #include<stdio.h>
@@ -6,7 +9,11 @@
 
 
 /**
- * main - Entry point
+ * struct dog  - dog struct
+ *
+ * @name: name
+ * @age: age
+ * @owner: owner of the dog
  *
  * Description: A C progrmam uses puts function
  *
@@ -14,7 +21,8 @@
  */
 struct dog
 {
-    char *name;
-    float age;
-    char *owner;
+	char *name;
+	float age;
+	char *owner;
 };
+#endif
