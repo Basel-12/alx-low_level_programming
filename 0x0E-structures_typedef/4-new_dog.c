@@ -3,6 +3,7 @@
 #include<stdio.h>
 #include<unistd.h>
 #include "dog.h"
+#include <string.h>
 
 /**
  * _strcpy - copy string to string
