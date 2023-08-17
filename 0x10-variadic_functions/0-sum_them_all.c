@@ -13,8 +13,8 @@
 */
 int sum_them_all(const unsigned int n, ...)
 {
-	va_list args;
 	 int i = n, sum = 0;
+	 va_list args;
 
 	if (!n)
 		return (0);
