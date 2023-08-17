@@ -5,9 +5,9 @@
  *
  *
  *@n: number of parameters
+ *@...: the integers
  *
- *
- *Return: sum of numbers
+ * Return: sum of numbers
  *
  *
  */
