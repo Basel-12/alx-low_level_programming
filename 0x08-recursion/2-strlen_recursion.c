@@ -7,7 +7,8 @@
 *
 * @s: char pointer
 *
-* return: int
+* Return: void
+*
 */
 int _strlen_recursion(char *s)
 {
