@@ -3,7 +3,7 @@
 #include "main.h"
 #include <string.h>
 
-int check_palindrome(char *s ,int start ,int last);
+int check_palindrome(char *s, int start, int last);
 /**
 * is_palindrome - function return size of string
 *
