@@ -32,7 +32,7 @@ int check_palindrome(char *s, int start, int last)
 {
 	int siz = strlen(s);
 
-	if (*s == "" || start == siz / 2)
+	if (s == NULL || start == siz / 2)
 		return (1);
 	if (s[start] == s[last])
 		return (check_palindrome(s, start + 1, last - 1));
