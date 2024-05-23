@@ -1,10 +1,9 @@
 /**
  * main - function
  *
- * Description: print
+ * Description: print _putchar
  *
- * return: 0
- *
+ * Return: 0
  *
  */
 
@@ -13,5 +12,5 @@
 int main(void)
 {
 	printf("_puthcar\n");
-	return(0);
+	return (0);
 }
