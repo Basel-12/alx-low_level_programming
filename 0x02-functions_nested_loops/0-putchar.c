@@ -11,6 +11,6 @@
 
 int main(void)
 {
-	printf("_puthcar\n");
+	printf("_putchar\n");
 	return (0);
 }
