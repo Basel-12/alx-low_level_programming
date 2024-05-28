@@ -19,6 +19,11 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int i, flag = 1, value;
 	va_list args;
 
+	if (!n)
+	{
+		printf("\n");
+		return;
+	}
 	if (*separator == '\0')
 		flag = 0;
 	va_start(args, n);
@@ -33,4 +38,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 			printf("%d\n", value);
 	}
+	va_end(args);
 }
