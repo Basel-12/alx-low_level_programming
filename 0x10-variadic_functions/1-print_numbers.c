@@ -16,7 +16,7 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	int i, flag = 1, value;
+	int i, value;
 	va_list args;
 
 	if (!n)
