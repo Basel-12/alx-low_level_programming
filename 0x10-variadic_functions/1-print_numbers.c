@@ -19,7 +19,7 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	int i, flag = 1, value;
 	va_list args;
 
-	if (*separator == '\0')
+	if (separator == '\0')
 		flag = 0;
 	va_start(args, n);
 	for (i = 0; i < (int)n; i++)
