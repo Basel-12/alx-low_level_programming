@@ -15,14 +15,14 @@
 
 void free_listint(listint_t *head)
 {
-	listint_t *cur;
+	listint_t *cur = head;
 
 	if (!head)
 		return;
 	while (head)
 	{
-		cur = head;
-		free(cur);
 		head = head->next;
+		free(cur);
+		cur = head;
 	}
 }
