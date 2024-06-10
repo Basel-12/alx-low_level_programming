@@ -7,7 +7,6 @@
  * print_listint - function
  *
  * @h: pointer to first node of list
- *
  * Description: function to print list
  *
  * Return: number of nodes
