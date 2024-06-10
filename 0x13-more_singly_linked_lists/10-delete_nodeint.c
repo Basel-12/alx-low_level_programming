@@ -4,7 +4,7 @@
 #include "lists.h"
 
 /**
- * insert_nodeint_at_index - function
+ * delete_nodeint_at_index - function
  *
  * @head: pointer to pointer to first node of list
  *
